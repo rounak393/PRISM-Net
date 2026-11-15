@@ -20,9 +20,22 @@ Precision is everything in medical imaging. Here is how PRISM-Net holds up again
 | **BUSBRA** | `91.31 ± 2.01` | `84.27 ± 1.93` |
 
 *Image-level 80:10:10 split. All scores are in % and reported as mean ± standard deviation over five random seeds.*
-## 🔬 Error Analysis
 
-To build trust in medical AI, we need to know exactly where the model struggles. Our error mapping visualizes the network's decision boundaries directly against the ground truth.
+
+## 🧪 Ablation Study (Patient-Level Split)
+
+In a patient-level split, every image from a given patient is kept in a single partition (train, validation, or test), so no patient is seen in both training and testing. The table below repeats the component-wise ablation under this stricter protocol.
+
+| Model Variant | R50 | Edge | FSAM | Attn | DS | BUSI Dice | BUSI IoU | BUSBRA Dice | BUSBRA IoU |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| M1: FastSAM-only U-Net | ✗ | ✗ | ✓ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
+| M2: ResNet50-only U-Net | ✓ | ✗ | ✗ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
+| M3: ResNet50 + Roberts Edge | ✓ | ✓ | ✗ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
+| M4: Dual-path (M3 + FSAM) | ✓ | ✓ | ✓ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
+| M5: Dual-path + Attention | ✓ | ✓ | ✓ | ✓ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
+| **M6: PRISM-Net (Full)** | ✓ | ✓ | ✓ | ✓ | ✓ | **`TBD ± TBD`** | **`TBD ± TBD`** | **`TBD ± TBD`** | **`TBD ± TBD`** |
+
+*R50: ResNet-50 encoder · Edge: Roberts edge early fusion · FSAM: FastSAM branch · Attn: PCBAM + SGA + Attention Gates · DS: deep supervision. ✓ = present, ✗ = absent. All scores are in % and reported as mean ± standard deviation over five random seeds.*
 
 FIGURE 1: BUSI ERROR ANALYSIS
 <img width="971" height="315" alt="BUSIERROR" src="https://github.com/user-attachments/assets/0b58364e-b681-4655-b6f2-28e68afdbe54" />
