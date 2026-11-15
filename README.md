@@ -24,7 +24,7 @@ Precision is everything in medical imaging. Here is how PRISM-Net holds up again
 
 ## 🧪 Ablation Study (Patient-Level Split)
 
-In a patient-level split, every image from a given patient is kept in a single partition (train, validation, or test), so no patient is seen in both training and testing. The table below repeats the component-wise ablation under this stricter protocol.
+In a patient-level split, every image from a given patient is kept in a single partition (train, validation, or test), so no patient is seen in both training and testing. The table below repeats the component-wise ablation under this stricter protocol. All scores are in % and reported as mean ± standard deviation over five random seeds.
 
 | Model Variant | R50 | Edge | FSAM | Attn | DS | BUSI Dice | BUSI IoU | BUSBRA Dice | BUSBRA IoU |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
