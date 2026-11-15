@@ -33,7 +33,7 @@ In a patient-level split, every image from a given patient is kept in a single p
 | M3: ResNet50 + Roberts Edge | ✓ | ✓ | ✗ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
 | M4: Dual-path (M3 + FSAM) | ✓ | ✓ | ✓ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
 | M5: Dual-path + Attention | ✓ | ✓ | ✓ | ✓ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
-| **M6: PRISM-Net (Full)** | ✓ | ✓ | ✓ | ✓ | ✓ | **`TBD ± TBD`** | **`TBD ± TBD`** | **`TBD ± TBD`** | **`TBD ± TBD`** |
+| **M6: PRISM-Net (Full)** | ✓ | ✓ | ✓ | ✓ | ✓ | **`82.63 ± 1.74`** | **`71.06 ± 1.51`** | **`88.31 ± 1.93`** | **`80.43 ± 2.68`** |
 
 *R50: ResNet-50 encoder · Edge: Roberts edge early fusion · FSAM: FastSAM branch · Attn: PCBAM + SGA + Attention Gates · DS: deep supervision. ✓ = present, ✗ = absent. All scores are in % and reported as mean ± standard deviation over five random seeds.*
 
