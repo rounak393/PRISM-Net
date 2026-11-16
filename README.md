@@ -30,7 +30,7 @@ In a patient-level split, every image from a given patient is kept in a single p
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | M1: FastSAM-only U-Net | ✗ | ✗ | ✓ | ✗ | ✗ | `72.18 ± 2.64` | `61.64 ± 2.09` | `84.73 ± 1.13` | `79.65 ± 2.03` |
 | M2: ResNet50-only U-Net | ✓ | ✗ | ✗ | ✗ | ✗ | `74.57 ± 1.35` | `61.26 ± 2.04` | `84.36 ± 1.34` | `79.36 ± 2.31` |
-| M3: ResNet50 + Roberts Edge | ✓ | ✓ | ✗ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
+| M3: ResNet50 + Roberts Edge | ✓ | ✓ | ✗ | ✗ | ✗ | `76.87 ± 1.75` | `64.25 ± 0.98` | `85.90 ± 1.72` | `81.69 ± 1.47` |
 | M4: Dual-path (M3 + FSAM) | ✓ | ✓ | ✓ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
 | M5: Dual-path + Attention | ✓ | ✓ | ✓ | ✓ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
 | **M6: PRISM-Net (Full)** | ✓ | ✓ | ✓ | ✓ | ✓ | **`82.63 ± 1.74`** | **`71.06 ± 1.51`** | **`88.31 ± 1.93`** | **`80.43 ± 2.68`** |
