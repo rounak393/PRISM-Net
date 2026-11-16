@@ -28,11 +28,11 @@ In a patient-level split, every image from a given patient is kept in a single p
 
 | Model Variant | R50 | Edge | FSAM | Attn | DS | BUSI Dice | BUSI IoU | BUSBRA Dice | BUSBRA IoU |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| M1: FastSAM-only U-Net | ✗ | ✗ | ✓ | ✗ | ✗ | `72.18 ± 2.64` | `61.64 ± 2.09` | `84.73 ± 1.13` | `79.65 ± 2.03` |
-| M2: ResNet50-only U-Net | ✓ | ✗ | ✗ | ✗ | ✗ | `74.57 ± 1.35` | `61.26 ± 2.04` | `84.36 ± 1.34` | `79.36 ± 2.31` |
-| M3: ResNet50 + Roberts Edge | ✓ | ✓ | ✗ | ✗ | ✗ | `76.87 ± 1.75` | `64.25 ± 0.98` | `85.90 ± 1.72` | `81.69 ± 1.47` |
-| M4: Dual-path (M3 + FSAM) | ✓ | ✓ | ✓ | ✗ | ✗ | `78.52 ± 1.31` | `65.29 ± 1.76` | `85.94 ± 0.82` | `82.93 ± 1.88` |
-| M5: Dual-path + Attention | ✓ | ✓ | ✓ | ✓ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
+| M1: FastSAM-only U-Net | ✗ | ✗ | ✓ | ✗ | ✗ | `72.18 ± 2.64` | `61.64 ± 2.09` | `84.73 ± 1.13` | `74.65 ± 2.03` |
+| M2: ResNet50-only U-Net | ✓ | ✗ | ✗ | ✗ | ✗ | `74.57 ± 1.35` | `61.26 ± 2.04` | `84.36 ± 1.34` | `76.36 ± 2.31` |
+| M3: ResNet50 + Roberts Edge | ✓ | ✓ | ✗ | ✗ | ✗ | `76.87 ± 1.75` | `64.25 ± 0.98` | `85.90 ± 1.72` | `8.69 ± 1.47` |
+| M4: Dual-path (M3 + FSAM) | ✓ | ✓ | ✓ | ✗ | ✗ | `78.52 ± 1.31` | `65.29 ± 1.76` | `85.94 ± 0.82` | `77.93 ± 1.88` |
+| M5: Dual-path + Attention | ✓ | ✓ | ✓ | ✓ | ✗ | `80.58 ± 1.85` | `68.55 ± 1.95` | `87.10 ± 1.61` | ` 79.61± 1.83` |
 | **M6: PRISM-Net (Full)** | ✓ | ✓ | ✓ | ✓ | ✓ | **`82.63 ± 1.74`** | **`71.06 ± 1.51`** | **`88.31 ± 1.93`** | **`80.43 ± 2.68`** |
 
 *R50: ResNet-50 encoder · Edge: Roberts edge early fusion · FSAM: FastSAM branch · Attn: PCBAM + SGA + Attention Gates · DS: deep supervision. ✓ = present, ✗ = absent. All scores are in % and reported as mean ± standard deviation over five random seeds.*
