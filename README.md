@@ -28,8 +28,8 @@ In a patient-level split, every image from a given patient is kept in a single p
 
 | Model Variant | R50 | Edge | FSAM | Attn | DS | BUSI Dice | BUSI IoU | BUSBRA Dice | BUSBRA IoU |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| M1: FastSAM-only U-Net | ✗ | ✗ | ✓ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
-| M2: ResNet50-only U-Net | ✓ | ✗ | ✗ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
+| M1: FastSAM-only U-Net | ✗ | ✗ | ✓ | ✗ | ✗ | `72.18 ± 2.64` | `61.64 ± 2.09` | `84.73 ± 1.13` | `79.65 ± 2.03` |
+| M2: ResNet50-only U-Net | ✓ | ✗ | ✗ | ✗ | ✗ | `74.57 ± 1.35` | `61.26 ± 2.04` | `84.36 ± 1.34` | `79.36 ± 2.31` |
 | M3: ResNet50 + Roberts Edge | ✓ | ✓ | ✗ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
 | M4: Dual-path (M3 + FSAM) | ✓ | ✓ | ✓ | ✗ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
 | M5: Dual-path + Attention | ✓ | ✓ | ✓ | ✓ | ✗ | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` | `TBD ± TBD` |
